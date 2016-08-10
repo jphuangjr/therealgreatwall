@@ -91,9 +91,31 @@ button:active {
   font: 30px solid black;
   padding: 20px;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 7%;
   transform: rotate(-10deg);
   z-index: 2;
+}
+
+.img-hor {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#banner2 {
+    width: 420px;
+    height: 45px;
+    font-weight: bolder !important;
+    font-family: "Avenir Next" !important;
+    font: 15px solid black;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 1%;
+    transform: rotate(-10deg);
+    z-index: 2;
 }
 
 .b_yellow {
