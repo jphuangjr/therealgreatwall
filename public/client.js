@@ -33,6 +33,8 @@ var renderer = function(){
 
 // console.log("secret: ", process.env.SECRET)
 
+
+
  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyCDIPl1A2Q6tcg1ZHh8q6V8nWhXOssm5zI",
