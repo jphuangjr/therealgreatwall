@@ -85,8 +85,9 @@ button:active {
 }
 
 #banner {
-  width: 300px;
-  font-weight: bolder;
+  width: 330px;
+  font-weight: bolder !important;
+  font-family: "Avenir Next" !important;
   font: 30px solid black;
   padding: 20px;
   margin: 0 auto;
@@ -104,6 +105,7 @@ button:active {
   margin-top: 14%;
   width: 300px;
   font: 14px solid black;
+  font-family: "Courier New" !important;
   text-align: center;
   z-index: 2;
 }
