@@ -1,0 +1,61 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="banner" class="b_yellow">The Real Great Wall</div>
+      <div><p id="mainText">Donald Trump wants to build a wall between the United States and Mexico to “keep our borders safe.” In reality, the only wall we need built is one to keep him away from us. So let’s build one. Together. Brick by brick. </p></div>
+      <br><br>
+      <div id='nameArea'>
+        <label for='nameInput'>Name</label>
+        <input id= "nameInput" type='text'/>
+      </div>
+      <div id='emailArea'>
+        <label for='emailInput' style="z-index: 999;">Email</label>
+        <input id='emailInput' type='text'>
+      </div>
+      <div id='commentArea'>
+        <label for='commentInput'>Comment</label>
+        <textarea id='commentInput' style="width: 200px; height: 100px"></textarea>
+      </div>
+      
+      <div id="brickButton"><button class="b_yellow">Lay Your Brick</button></div>
+      <br>
+      <img style = "position:absolute; top: 25px; left: 700px; width: 300px; z-index: -5" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2FDonald_Trump_stat.png"><img>
+      <div id='target'></div>
+      
+    </div>
+    
+    
+
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    
+    <script>
+     
+    </script>
+        
+  </body>
+</html>

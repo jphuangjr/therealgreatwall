@@ -1,0 +1,166 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  color: pink;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+#main {
+  /* background: pink; */
+  width: 1000px;
+  height: 700px;
+  display: inline-block;
+}
+
+#trump {
+  /* background: url("https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2FDonald_Trump_stat.png"); */
+  backgound: blue
+  background-size: cover;
+  width: 500px;
+  heightL 500px;
+}
+
+
+.brick {
+  width:30px;
+  z-index: -1;
+}
+
+#banner {
+  width: 300px;
+  font-weight: bolder;
+  font: 30px solid black;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10%;
+  transform: rotate(-10deg);
+  z-index: 2;
+}
+
+.b_yellow {
+  background: yellow;
+}
+
+#mainText {
+  margin: 0 auto;
+  margin-top: 14%;
+  width: 300px;
+  font: 14px solid black;
+  text-align: center;
+  z-index: 2;
+}
+
+#brickButton {
+  text-align: center;
+  margin-top: 3%;
+  z-index: 2;
+}
+
+
+	
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 220px;
+}
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+#nameArea {
+  width: 200px;
+  margin: 0 auto;
+  z-index: 2;
+  
+}
+
+#emailArea {
+  width: 200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+#commentArea {
+  width: 200px;
+  margin: 0 auto;
+  z-index: 2;
+}
