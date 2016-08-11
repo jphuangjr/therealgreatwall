@@ -3,10 +3,12 @@
 var re = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i
 
 
-
+$( window ).resize(function() {
+  renderer()
+});
 
 var renderer = function(){
-  var topcss = 875;
+  var topcss = 1000;
   var left = 25
   $.ajax({ 
       url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
@@ -14,16 +16,17 @@ var renderer = function(){
 		  contentType: "application/json",
 		  success: function(users){
 		    ////////////
-		    // var test = [{name: "lol", email: "lol", message: "lol"}]
-		    // for(var i=0; i<1000; i++){
+		    //var test = [{name: "lol", email: "lol", message: "lol"}]
+		    //for(var i=0; i<1000; i++){
 		    //   test.push({name: "lol", email: "lol", message: "lol"})
-		    // }
+		    //}
 		    //////////
 		    $("#target").html(" ");
-		    // test.forEach(function(value){
+        var windowWidth = $(window).width()
+		    //test.forEach(function(value){
 		    users.forEach(function(value){
 		      var title = value.message
-		      if(left === 1000){
+		      if(left > windowWidth){
             left = 25;
             topcss -= 10;
           }

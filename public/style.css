@@ -124,11 +124,11 @@ button:active {
 
 #mainText {
   margin: 0 auto;
-  margin-top: 14%;
-  width: 300px;
+  margin-top: 10%;
+  width: 550px;
   font: 14px solid black;
   font-family: "Courier New" !important;
-  text-align: center;
+  /*text-align: center;*/
   z-index: 2;
 }
 
@@ -138,8 +138,6 @@ button:active {
   z-index: 2;
 }
 
-
-	
 .tooltip{
     display: inline;
     position: relative;
