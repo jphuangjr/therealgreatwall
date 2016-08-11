@@ -59,14 +59,16 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.58924204" vertical-offset="479" max-vertical-offset="1560">
-                  <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+                <state vertical-scroll-proportion="0.7359413" vertical-offset="59" max-vertical-offset="1560">
+                  <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#label#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#input#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#label#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#textarea#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -101,7 +103,7 @@
           <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.034246575" vertical-offset="990" max-vertical-offset="1590">
+                <state vertical-scroll-proportion="0.14383562" vertical-offset="942" max-vertical-offset="1590">
                   <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
                   <folding>
                     <marker date="1470908838000" expanded="true" signature="682:701" placeholder="..." />
@@ -430,7 +432,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.034246575" vertical-offset="990" max-vertical-offset="1590">
+        <state vertical-scroll-proportion="0.14383562" vertical-offset="942" max-vertical-offset="1590">
           <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
           <folding>
             <marker date="1470908838000" expanded="true" signature="682:701" placeholder="..." />
@@ -441,14 +443,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58924204" vertical-offset="479" max-vertical-offset="1560">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.7359413" vertical-offset="59" max-vertical-offset="1560">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#2;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
