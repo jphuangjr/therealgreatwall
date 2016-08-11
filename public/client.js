@@ -8,7 +8,7 @@ $( window ).resize(function() {
 });
 
 var renderer = function(){
-  var topcss = 1100;
+  var topcss = 960;
   var left = 25
   $.ajax({ 
       url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
