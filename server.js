@@ -18,7 +18,32 @@ app.get("/", function (request, response) {
 });
 
 app.get("/getBricks", function (request, response) {
-  response.send(dreams);
+
+  $.ajax({
+    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+email+'"}&apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN',
+    type: "GET",
+    contentType: "application/json",
+    success: function(data){
+      if(data.length === 0){
+        $.ajax({
+          url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
+          data: JSON.stringify({email: email, name: name, message: title}),
+          type: "POST",
+          contentType: "application/json",
+          success: function(data){
+            console.log(data);
+            renderer()
+          },
+          error: function(xhr, status, err){
+            console.log(err);
+          }
+        });
+      }
+    },
+    error: function(xhr, status, err){
+      console.log(err);
+    }
+  });
 });
 
 // could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body

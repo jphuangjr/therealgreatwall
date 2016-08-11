@@ -106,7 +106,7 @@ button:active {
 }
 
 #banner2 {
-    width: 420px;
+    width: 400px;
     height: 45px;
     font-weight: bolder !important;
     font-family: "Avenir Next" !important;
@@ -125,10 +125,12 @@ button:active {
 #mainText {
   margin: 0 auto;
   margin-top: 10%;
-  width: 550px;
+  width: 600px;
   font: 14px solid black;
   font-family: "Courier New" !important;
   /*text-align: center;*/
+    background: rgba(230, 216, 209, 0.2);
+    padding: 50px;
   z-index: 2;
 }
 
@@ -169,20 +171,17 @@ button:active {
 }
 
 #nameArea {
-  width: 200px;
+  width: 500px;
   margin: 0 auto;
   z-index: 2;
+    position:absolute; top: 695px; left: 280px;
   
 }
 
-#emailArea {
-  width: 200px;
-  margin: 0 auto;
-  z-index: 2;
-}
 
 #commentArea {
   width: 200px;
   margin: 0 auto;
   z-index: 2;
 }
+

@@ -8,7 +8,7 @@ $( window ).resize(function() {
 });
 
 var renderer = function(){
-  var topcss = 1000;
+  var topcss = 1100;
   var left = 25
   $.ajax({ 
       url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
@@ -46,30 +46,16 @@ var renderer = function(){
 
 
  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCDIPl1A2Q6tcg1ZHh8q6V8nWhXOssm5zI",
-    authDomain: "trumpwall-f504a.firebaseapp.com",
-    databaseURL: "https://trumpwall-f504a.firebaseio.com",
-    storageBucket: "",
-  };
-  var app = firebase.initializeApp(config);
-  var database = app.database();
-  var auth = app.auth();
-  var storage = app.storage();
-  
-  var databaseRef = database.ref().child("users")
-  
+ var config = {
+   apiKey: "AIzaSyCDIPl1A2Q6tcg1ZHh8q6V8nWhXOssm5zI",
+   authDomain: "trumpwall-f504a.firebaseapp.com",
+   databaseURL: "https://trumpwall-f504a.firebaseio.com",
+   storageBucket: "",
+};
 
-
-$(".submit").on("click", function(){
-  $("#target").append('<img src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick" />')
-
-  var count = document.getElementById("target")
-  console.log(count.children.length)
-  if(count.children.length % 16 === 0){
-    
-  }
-})
+var app = firebase.initializeApp(config);
+var database = app.database();
+var databaseRef = database.ref().child("users")
 
 
 $("#brickButton").on('click', function(){
