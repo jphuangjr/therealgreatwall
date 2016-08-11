@@ -30,7 +30,7 @@ app.get("/render", function (request, response) {
       response.send(200)
     },
     error: function(xhr, status, err){
-      console.log(err);
+      console.log("ERROR: ",err);
     }
   });
 });
