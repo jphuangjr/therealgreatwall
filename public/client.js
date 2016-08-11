@@ -66,21 +66,6 @@ $("#brickButton").on('click', function(){
 
 renderer()
 
-function getlist(){
-  $.ajax({
-    url: "/render",
-    type: "GET",
-    success: function(data){
-      for(var i=0; i<data.length; i++){
-        var title = data[i].message
-        console.log(title)
-      }
-    },
-    error: function(xhr, status, err){
-      console.log(err);
-    }
-  });
-}
 
 console.log("WebMaster: www.jphuangjr.com")
 
