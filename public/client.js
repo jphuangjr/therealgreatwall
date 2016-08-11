@@ -64,7 +64,8 @@ var renderer = function(){
 $("#brickButton").on('click', function(){
   var name = document.getElementById("nameInput").value || "anonymous"
   var email = document.getElementById("emailInput").value
-  var title = name + ": " + document.getElementById("commentInput").value || name + ": No Message";
+  var city = document.getElementById("cityInput").value || "unknown"
+  var title = name +" from "+ city+": " + document.getElementById("commentInput").value || name + ": No Message";
   
   var valid = re.test(email)
 
@@ -72,7 +73,7 @@ $("#brickButton").on('click', function(){
 
     $.ajax({
       url: "/addBrick",
-      data: JSON.stringify({email: email, name: name, message: title}),
+      data: JSON.stringify({email: email, name: name, city: city, message: title}),
       type: "POST",
       contentType: "application/json",
       success: function(data){
