@@ -5,8 +5,25 @@ $( window ).resize(function() {
 });
 
 $("#count_box").on("click", function(){
-  $.modal('<div>Test</div>')
+  $.ajax({
+    url: "/render",
+    type: "GET",
+    //contentType: "application/json",
+    success: function(data){
+      $("#main").hide();
+      var html = "<div>"
+      for(var i=0; i<data.length; i++){
+        var title = data[i].message
+        html += "<p>" + title + "</p>"
+      }
+      $("#list").html(html + "</div>")
+    },
+    error: function(xhr, status, err){
+      console.log(err);
+    }
+  })
 })
+
 
 var renderer = function(){
   $.ajax({ 
