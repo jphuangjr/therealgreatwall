@@ -10,6 +10,7 @@ var renderer = function(){
 		  type: "GET",
 		  //contentType: "application/json",
 		  success: function(data){
+        $("#count_box").html(data.length + " Bricks");
         var topcss = 960;
         var left = 25
         $("#target").html(" ");

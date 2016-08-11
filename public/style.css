@@ -141,6 +141,10 @@ button:active {
   z-index: 2;
 }
 
+#count_box {
+    padding: 5px;
+}
+
 #brickButton {
   font-family: "Courier New" !important;
   text-align: center;
