@@ -41,7 +41,7 @@ app.post("/addBrick", function (request, response) {
 
 });
 
-// Simple in-memory store for now
+
 
 
 //listen for requests :)
