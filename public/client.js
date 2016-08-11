@@ -68,5 +68,5 @@ renderer()
 
 
 console.log("WebMaster: www.jphuangjr.com")
-console.log("To see full list of signer, please paste 'showList()' in console")
+console.log("To see full list of signer, please type 'showList()' in console line below")
 
