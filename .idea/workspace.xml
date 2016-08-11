@@ -114,12 +114,12 @@
           <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82191783" vertical-offset="0" max-vertical-offset="1500">
-                  <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+                <state vertical-scroll-proportion="0.44520548" vertical-offset="0" max-vertical-offset="1515">
+                  <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
                   <folding>
-                    <marker date="1470906601000" expanded="true" signature="532:551" placeholder="..." />
-                    <marker date="1470906601000" expanded="true" signature="586:598" placeholder="..." />
-                    <marker date="1470906601000" expanded="true" signature="591:598" placeholder="..." />
+                    <marker date="1470906684000" expanded="true" signature="557:576" placeholder="..." />
+                    <marker date="1470906684000" expanded="true" signature="611:623" placeholder="..." />
+                    <marker date="1470906684000" expanded="true" signature="616:623" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -456,12 +456,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82191783" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.44520548" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
           <folding>
-            <marker date="1470906601000" expanded="true" signature="532:551" placeholder="..." />
-            <marker date="1470906601000" expanded="true" signature="586:598" placeholder="..." />
-            <marker date="1470906601000" expanded="true" signature="591:598" placeholder="..." />
+            <marker date="1470906684000" expanded="true" signature="557:576" placeholder="..." />
+            <marker date="1470906684000" expanded="true" signature="611:623" placeholder="..." />
+            <marker date="1470906684000" expanded="true" signature="616:623" placeholder="..." />
           </folding>
         </state>
       </provider>

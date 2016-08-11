@@ -11,6 +11,7 @@ $("#count_box").on("click", function(){
     //contentType: "application/json",
     success: function(data){
       $("#main").hide();
+      $("#list").show();
       var html = "<div><h2 style='font-weight: bolder'>Signature List:</h2><span style='float: right' onclick='$(\"#main\").show(); $(\"list\").hide()'>CLOSE</span><br>"
       for(var i=0; i<data.length; i++){
         var title = data[i].message
