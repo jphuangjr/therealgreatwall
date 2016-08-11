@@ -10,7 +10,21 @@ var renderer = function(){
       url: "/render",
 		  type: "GET",
 		  //contentType: "application/json",
-		  success: function(success){
+		  success: function(data){
+        var topcss = 960;
+        var left = 25
+        $("#target").html(" ");
+        var windowWidth = $(window).width()
+        for(var i=0; i<data.length; i++){
+          var title = data[i].message
+          if(left > windowWidth){
+            left = 25;
+            topcss -= 10;
+          }
+          $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
+          left += 25;
+        }
+
         console.log("success")
 		  },
 		  error: function(xhr, status, err){
@@ -31,16 +45,15 @@ $("#brickButton").on('click', function(){
   if(valid){
 
     $.ajax({
-      url: "http://www.therealgreatwall.com/addBrick",
+      url: "/addBrick",
       data: JSON.stringify({email: email, name: name, message: title}),
       type: "POST",
       contentType: "application/json",
       success: function(data){
-        console.log(data);
         renderer()
       },
       error: function(xhr, status, err){
-        console.log(err);
+
       }
     });
 
