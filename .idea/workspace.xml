@@ -113,11 +113,12 @@
           <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="1500">
-                  <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+                <state vertical-scroll-proportion="0.10273973" vertical-offset="0" max-vertical-offset="1500">
+                  <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
                   <folding>
-                    <marker date="1470906047000" expanded="true" signature="532:551" placeholder="..." />
-                    <marker date="1470906047000" expanded="true" signature="586:598" placeholder="..." />
+                    <marker date="1470906351000" expanded="true" signature="532:551" placeholder="..." />
+                    <marker date="1470906351000" expanded="true" signature="586:598" placeholder="..." />
+                    <marker date="1470906351000" expanded="true" signature="591:598" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -454,11 +455,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47945204" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.10273973" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding>
-            <marker date="1470906047000" expanded="true" signature="532:551" placeholder="..." />
-            <marker date="1470906047000" expanded="true" signature="586:598" placeholder="..." />
+            <marker date="1470906351000" expanded="true" signature="532:551" placeholder="..." />
+            <marker date="1470906351000" expanded="true" signature="586:598" placeholder="..." />
+            <marker date="1470906351000" expanded="true" signature="591:598" placeholder="..." />
           </folding>
         </state>
       </provider>
