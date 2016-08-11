@@ -11,7 +11,7 @@ $("#count_box").on("click", function(){
     //contentType: "application/json",
     success: function(data){
       $("#main").hide();
-      var html = "<div>"
+      var html = "<div><h2 style='font-weight: bolder'>Signature List:</h2><br><br>"
       for(var i=0; i<data.length; i++){
         var title = data[i].message
         html += "<p>" + title + "</p>"
