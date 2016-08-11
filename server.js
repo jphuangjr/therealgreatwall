@@ -8,6 +8,33 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+app.get("/render", function (request, response) {
+  $.ajax({
+    url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + "mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
+    type: "GET",
+    contentType: "application/json",
+    success: function(users){
+      var topcss = 960;
+      var left = 25
+      $("#target").html(" ");
+      var windowWidth = $(window).width()
+      users.forEach(function(value){
+        var title = value.message
+        if(left > windowWidth){
+          left = 25;
+          topcss -= 10;
+        }
+        $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
+        left += 25;
+      })
+      response.send(200)
+    },
+    error: function(xhr, status, err){
+      console.log(err);
+    }
+  });
+});
+
 app.post("/addBrick", function (request, response) {
   console.log(request.data)
   $.ajax({
