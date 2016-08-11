@@ -7,7 +7,7 @@ $( window ).resize(function() {
 
 var renderer = function(){
   $.ajax({ 
-      url: "http://www.therealgreatwall.com/render",
+      url: "/render",
 		  type: "GET",
 		  contentType: "application/json",
 		  success: function(success){
