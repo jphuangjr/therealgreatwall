@@ -24,7 +24,7 @@ var renderer = function(){
           left += 25;
         }
 
-        console.log("success")
+        //console.log("success")
 		  },
 		  error: function(xhr, status, err){
 		    console.log(err);
@@ -68,4 +68,5 @@ renderer()
 
 
 console.log("WebMaster: www.jphuangjr.com")
+console.log("To see full list of signer, please paste 'showList()' in console")
 
