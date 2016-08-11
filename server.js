@@ -1,45 +1,24 @@
-// Initialize Firebase
-//var config = {
-//  apiKey: "AIzaSyCDIPl1A2Q6tcg1ZHh8q6V8nWhXOssm5zI",
-//  authDomain: "trumpwall-f504a.firebaseapp.com",
-//  databaseURL: "https://trumpwall-f504a.firebaseio.com",
-//  storageBucket: ""
-//};
-
-//var app = firebase.initializeApp(config);
-//var database = app.database();
-//var databaseRef = database.ref().child("users")
-
-// init project
 var express = require('express');
 var app = express();
+var config = require("./keys.js")
+console.log(config)
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
-// http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
-// http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-app.get("/getBricks", function (request, response) {
-
-});
-
-// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
 app.post("/addBrick", function (request, response) {
   console.log(request.data)
   $.ajax({
-    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+request.data.email+'"}&apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN',
+    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+request.data.email+'"}&apiKey=' + config.apiKey,
     type: "GET",
     contentType: "application/json",
     success: function(data){
       if(data.length === 0){
         $.ajax({
-          url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
+          url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + config.apiKey,
           data: JSON.stringify({email: request.data.email, name: request.data.name, message: request.data.title}),
           type: "POST",
           contentType: "application/json",
