@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var $ = require("jQuery")
 //var config = require("./public/keys.js")
 
 app.use(express.static('public'));
