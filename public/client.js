@@ -4,6 +4,10 @@ $( window ).resize(function() {
   renderer()
 });
 
+$("#emailLabel").on("click", function(){
+  alert("Please enter a valid email. You will not receive any emails from us.")
+})
+
 $("#count_box").on("click", function(){
   $.ajax({
     url: "/render",
