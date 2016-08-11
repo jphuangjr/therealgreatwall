@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
-var config = require("./public/keys.js")
-console.log(config)
+//var config = require("./public/keys.js")
+console.log(process.env.API)
 
 app.use(express.static('public'));
 
