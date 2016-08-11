@@ -1,6 +1,5 @@
 var re = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i
 
-
 $( window ).resize(function() {
   renderer()
 });
@@ -57,33 +56,6 @@ $("#brickButton").on('click', function(){
       }
     });
 
-
-
-    //  $.ajax({
-    //  url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+email+'"}&apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN',
-		 // type: "GET",
-		 // contentType: "application/json",
-		 // success: function(data){
-		 //   if(data.length === 0){
-		 //     $.ajax({
-    //        url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=mqvmM_b7JCNSRZg60uE18DljrstEwPuN",
-    //  		  data: JSON.stringify({email: email, name: name, message: title}),
-    //  		  type: "POST",
-    //  		  contentType: "application/json",
-    //  		  success: function(data){
-    //  		    console.log(data);
-    //            renderer()
-    //  		  },
-    //  		  error: function(xhr, status, err){
-    //  		    console.log(err);
-    //  		  }
-    //      });
-		 //   }
-		 // },
-		 // error: function(xhr, status, err){
-		 //   console.log(err);
-		 // }
-    //});
   } else {
     alert("Please enter a valid email")
   }
@@ -92,8 +64,23 @@ $("#brickButton").on('click', function(){
 })
 
 
-  renderer()
+renderer()
 
+var getList = function(){
+  $.ajax({
+    url: "/render",
+    type: "GET",
+    success: function(data){
+      for(var i=0; i<data.length; i++){
+        var title = data[i].message
+        console.log(title)
+      }
+    },
+    error: function(xhr, status, err){
+      console.log(err);
+    }
+  });
+}
 
 console.log("WebMaster: www.jphuangjr.com")
 
