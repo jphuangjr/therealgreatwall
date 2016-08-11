@@ -66,7 +66,7 @@ $("#brickButton").on('click', function(){
 
 renderer()
 
-var getList = function(){
+function getlist(){
   $.ajax({
     url: "/render",
     type: "GET",
