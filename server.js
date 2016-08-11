@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 //var config = require("./public/keys.js")
-console.log(process.env.API)
 
 app.use(express.static('public'));
 
@@ -12,13 +11,13 @@ app.get("/", function (request, response) {
 app.post("/addBrick", function (request, response) {
   console.log(request.data)
   $.ajax({
-    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+request.data.email+'"}&apiKey=' + config.apiKey,
+    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+request.data.email+'"}&apiKey=' + process.env.API,
     type: "GET",
     contentType: "application/json",
     success: function(data){
       if(data.length === 0){
         $.ajax({
-          url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + config.apiKey,
+          url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + process.env.API,
           data: JSON.stringify({email: request.data.email, name: request.data.name, message: request.data.title}),
           type: "POST",
           contentType: "application/json",
