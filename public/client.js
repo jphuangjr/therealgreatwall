@@ -4,6 +4,10 @@ $( window ).resize(function() {
   renderer()
 });
 
+$("#count_box").on("click", function(){
+  $.modal('<div>Test</div>')
+})
+
 var renderer = function(){
   $.ajax({ 
       url: "/render",
