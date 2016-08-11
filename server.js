@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var config = require("./keys.js")
+var config = require("./public/keys.js")
 console.log(config)
 
 app.use(express.static('public'));
