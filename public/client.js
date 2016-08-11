@@ -9,7 +9,7 @@ var renderer = function(){
   $.ajax({ 
       url: "/render",
 		  type: "GET",
-		  contentType: "application/json",
+		  //contentType: "application/json",
 		  success: function(success){
         console.log("success")
 		  },
