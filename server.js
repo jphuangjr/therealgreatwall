@@ -6,9 +6,9 @@ var config = {
   storageBucket: ""
 };
 
-var app = firebase.initializeApp(config);
-var database = app.database();
-var databaseRef = database.ref().child("users")
+//var app = firebase.initializeApp(config);
+//var database = app.database();
+//var databaseRef = database.ref().child("users")
 
 // init project
 var express = require('express');
