@@ -37,7 +37,7 @@ var renderer = function(){
 		  //contentType: "application/json",
 		  success: function(data){
         $("#count_box").html(data.length + " Bricks");
-        var topcss = 960;
+        var topcss = 980;
         var left = 25
         $("#target").html(" ");
         var windowWidth = $(window).width()
