@@ -4,6 +4,10 @@ $( window ).resize(function() {
   renderer()
 });
 
+$("body").mousemove(function(e) {
+  console.log(document.elementFromPoint(e.pageX, e.pageY))
+})
+
 $("#emailLabel").on("click", function(){
   alert("Please enter a valid email. You will not receive any emails from us.")
 })
