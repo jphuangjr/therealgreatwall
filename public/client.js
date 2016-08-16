@@ -48,9 +48,15 @@ var renderer = function(){
 		  //contentType: "application/json",
 		  success: function(data){
         //$("#count_box").html(data.length + " BRICKS");
+        var numberCount;
+        if(developerMode){
+          numberCount = 3000;
+        } else {
+          numberCount = data.length
+        }
 
         var $el = $("#count_box"); //[make sure this is a unique variable name]
-        $({someValue: 0}).animate({someValue: data.length}, {
+        $({someValue: 0}).animate({someValue: numberCount}, {
           duration: 2000,
           easing:'swing', // can be anything
           step: function() { // called on every step
