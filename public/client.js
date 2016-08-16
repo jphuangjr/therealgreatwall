@@ -59,8 +59,19 @@ var renderer = function(){
         var left = 25
         $("#target").html(" ");
         var windowWidth = $(window).width()
-        for(var i=0; i<data.length; i++){
-          var title = data[i].message
+        //for(var i=0; i<data.length; i++){
+        //  var title = data[i].message
+        //  if(left > windowWidth){
+        //    left = 25;
+        //    topcss -= 10;
+        //  }
+        //  $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
+        //  left += 25;
+        //}
+
+        ///////// Testing Purposes ////////
+        for(var i=0; i<3000; i++){
+          title = "lol"
           if(left > windowWidth){
             left = 25;
             topcss -= 10;
@@ -68,6 +79,7 @@ var renderer = function(){
           $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
           left += 25;
         }
+        //////////////////////////////////
 
         //console.log("success")
 		  },
