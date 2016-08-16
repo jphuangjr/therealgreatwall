@@ -40,7 +40,7 @@ var renderer = function(){
 
         var $el = $("#count_box"); //[make sure this is a unique variable name]
         $({someValue: 0}).animate({someValue: data.length}, {
-          duration: 3000,
+          duration: 2000,
           easing:'swing', // can be anything
           step: function() { // called on every step
             // Update the element's text with rounded-up value:
