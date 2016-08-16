@@ -16,6 +16,10 @@ body {
 .courier {
     font-family: 'Courier New' !important;
 }
+
+.twelve {
+    font: 14px solid black;
+}
 .bolder {
     font-weight:bolder
 }
@@ -92,10 +96,10 @@ button:active {
 }
 
 #banner {
-  width: 330px;
+  width: 360px;
   font-weight: bolder !important;
   font-family: "Avenir Next" !important;
-  font: 30px solid black;
+  font: 28px solid black;
   padding: 20px;
   margin: 0 auto;
   margin-top: 7%;
@@ -135,7 +139,7 @@ button:active {
   width: 600px;
   font: 14px solid black;
   font-family: "Courier New" !important;
-  /*text-align: center;*/
+  text-align: center;
     background: rgba(255, 255, 255, 0.2);
     padding: 50px;
   z-index: 2;
@@ -143,6 +147,9 @@ button:active {
 
 #count_box {
     padding: 5px;
+    font-family: "Avenir Next" !important;
+    font: 14px solid black;
+    font-weight: bolder;
 }
 
 #brickButton {
@@ -186,7 +193,7 @@ button:active {
   width: 500px;
   margin: 0 auto;
   z-index: 2;
-    position:absolute; top: 725px; left: 280px;
+    position:absolute; top: 745px; left: 280px;
   
 }
 

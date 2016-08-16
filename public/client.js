@@ -4,10 +4,6 @@ $( window ).resize(function() {
   renderer()
 });
 
-$("body").mousemove(function(e) {
-  console.log(document.elementFromPoint(e.pageX, e.pageY))
-})
-
 $("#emailLabel").on("click", function(){
   alert("Please enter a valid email. You will not receive any emails from us.")
 })
@@ -40,7 +36,25 @@ var renderer = function(){
 		  type: "GET",
 		  //contentType: "application/json",
 		  success: function(data){
-        $("#count_box").html(data.length + " Bricks");
+        //$("#count_box").html(data.length + " BRICKS");
+
+        var $el = $("#count_box"); //[make sure this is a unique variable name]
+        $({someValue: 0}).animate({someValue: data.length}, {
+          duration: 3000,
+          easing:'swing', // can be anything
+          step: function() { // called on every step
+            // Update the element's text with rounded-up value:
+            $el.text(commaSeparateNumber(Math.round(this.someValue)) + " BRICKS");
+          }
+        });
+
+        function commaSeparateNumber(val){
+          while (/(\d+)(\d{3})/.test(val.toString())){
+            val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+          }
+          return val;
+        }
+
         var topcss = 980;
         var left = 25
         $("#target").html(" ");
