@@ -66,7 +66,7 @@ var renderer = function(){
           return val;
         }
 
-        var topcss = 980;
+        var topcss = 1050;
         var left = 25
         $("#target").html(" ");
         var windowWidth = $(window).width()
