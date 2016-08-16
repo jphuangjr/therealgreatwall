@@ -4,7 +4,7 @@ $( window ).resize(function() {
   renderer()
 });
 
-var developerMode = true;
+var developerMode = false;
 
 var devOn = function(){
   if(developerMode){
