@@ -4,6 +4,17 @@ $( window ).resize(function() {
   renderer()
 });
 
+var developerMode = true;
+
+var devOn = function(){
+  if(developerMode){
+    developerMode = false;
+  } else {
+    developerMode = true
+  }
+  renderer()
+}
+
 $("#emailLabel").on("click", function(){
   alert("Please enter a valid email. You will not receive any emails from us.")
 })
@@ -59,27 +70,29 @@ var renderer = function(){
         var left = 25
         $("#target").html(" ");
         var windowWidth = $(window).width()
-        //for(var i=0; i<data.length; i++){
-        //  var title = data[i].message
-        //  if(left > windowWidth){
-        //    left = 25;
-        //    topcss -= 10;
-        //  }
-        //  $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
-        //  left += 25;
-        //}
 
-        ///////// Testing Purposes ////////
-        for(var i=0; i<3000; i++){
-          title = "lol"
-          if(left > windowWidth){
-            left = 25;
-            topcss -= 10;
+        if(developerMode){
+          for(var i=0; i<3000; i++){
+            title = "lol"
+            if(left > windowWidth){
+              left = 25;
+              topcss -= 10;
+            }
+            $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
+            left += 25;
           }
-          $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
-          left += 25;
+        } else {
+          for(var i=0; i<data.length; i++){
+            var title = data[i].message
+            if(left > windowWidth){
+              left = 25;
+              topcss -= 10;
+            }
+            $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
+            left += 25;
+          }
         }
-        //////////////////////////////////
+
 
         //console.log("success")
 		  },

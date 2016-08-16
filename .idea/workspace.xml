@@ -59,7 +59,7 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.0163934" vertical-offset="195" max-vertical-offset="1305">
+                <state vertical-scroll-proportion="2.2131147" vertical-offset="135" max-vertical-offset="1305">
                   <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -93,8 +93,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0" vertical-offset="2085" max-vertical-offset="3210">
-                  <caret line="139" column="18" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="18" />
+                <state vertical-scroll-proportion="-8.851851" vertical-offset="1786" max-vertical-offset="3210">
+                  <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -116,11 +116,11 @@
           <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/client.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6352584" vertical-offset="871" max-vertical-offset="2040">
-                  <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+                <state vertical-scroll-proportion="0.41033435" vertical-offset="0" max-vertical-offset="2235">
+                  <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
                   <folding>
-                    <marker date="1471328952000" expanded="true" signature="682:701" placeholder="..." />
-                    <marker date="1471328952000" expanded="true" signature="731:743" placeholder="..." />
+                    <marker date="1471329416000" expanded="true" signature="837:856" placeholder="..." />
+                    <marker date="1471329416000" expanded="true" signature="886:898" placeholder="..." />
                   </folding>
                 </state>
               </provider>
@@ -460,8 +460,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="942" max-vertical-offset="1590">
           <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
           <folding>
-            <marker date="1471328952000" expanded="true" signature="682:701" placeholder="..." />
-            <marker date="1471328952000" expanded="true" signature="731:743" placeholder="..." />
+            <marker date="1471329416000" expanded="true" signature="837:856" placeholder="..." />
+            <marker date="1471329416000" expanded="true" signature="886:898" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -513,17 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/keys.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
@@ -542,7 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0163934" vertical-offset="195" max-vertical-offset="1305">
+        <state vertical-scroll-proportion="2.2131147" vertical-offset="135" max-vertical-offset="1305">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -558,21 +547,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="2085" max-vertical-offset="3210">
-          <caret line="139" column="18" selection-start-line="139" selection-start-column="18" selection-end-line="139" selection-end-column="18" />
+        <state vertical-scroll-proportion="-8.851851" vertical-offset="1786" max-vertical-offset="3210">
+          <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6352584" vertical-offset="871" max-vertical-offset="2040">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.41033435" vertical-offset="0" max-vertical-offset="2235">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding>
-            <marker date="1471328952000" expanded="true" signature="682:701" placeholder="..." />
-            <marker date="1471328952000" expanded="true" signature="731:743" placeholder="..." />
+            <marker date="1471329416000" expanded="true" signature="837:856" placeholder="..." />
+            <marker date="1471329416000" expanded="true" signature="886:898" placeholder="..." />
           </folding>
         </state>
       </provider>
