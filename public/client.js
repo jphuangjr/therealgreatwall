@@ -145,6 +145,6 @@ $("#brickButton").on('click', function(){
 renderer()
 
 
-console.log("WebMaster: www.jphuangjr.com. Designed & conceived by Jake Altman and Oscar Gierup")
+console.log("WebMaster: Joshua Huang (www.jphuangjr.com). Designed & conceived by Jake Altman and Oscar Gierup")
 console.log("To see full list of signer, please type 'showList()' in console line below")
 
