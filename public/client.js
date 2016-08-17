@@ -1,5 +1,5 @@
 if(screen.width < 400){
-  alert("The Real Great Wall is not optimized to be viewed from a mobile device. Please view the site from a desktop computer")
+  alert("The Real Great Wall is not optimized to be viewed from a mobile device. Please view this site from a desktop computer")
 }
 
 var re = /^[-a-z0-9~!$%^&*_=+}{\'?]+(\.[-a-z0-9~!$%^&*_=+}{\'?]+)*@([a-z0-9_][-a-z0-9_]*(\.[-a-z0-9_]+)*\.(aero|arpa|biz|com|coop|edu|gov|info|int|mil|museum|name|net|org|pro|travel|mobi|[a-z][a-z])|([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}))(:[0-9]{1,5})?$/i
