@@ -99,7 +99,7 @@ var renderer = function(){
               topcss -= 10;
             }
             $("#target").append('<img title="' + title + '" style="position: absolute; cursor:pointer; top: '+ topcss +'px; left: '+ left + 'px" src="https://cdn.hyperdev.com/us-east-1%3Aa4e699a8-d495-4e1a-adaf-ec1060021a42%2Fbrick.jpg" class="brick tooltip" />')
-            left += 25;
+            left += 29;
           }
         }
 
