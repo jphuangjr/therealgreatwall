@@ -114,11 +114,13 @@ var renderer = function(){
 }
 
 
+//var desired = stringToReplace.replace(/[^\w\s]/gi, '')
+
 $("#brickButton").on('click', function(){
-  var name = document.getElementById("nameInput").value || "anonymous"
+  var name = document.getElementById("nameInput").value.replace(/[^\w\s]/gi, '*') || "anonymous"
   var email = document.getElementById("emailInput").value
-  var city = document.getElementById("cityInput").value || "unknown"
-  var title = name +" from "+ city+": " + document.getElementById("commentInput").value || name + ": No Message";
+  var city = document.getElementById("cityInput").value.replace(/[^\w\s]/gi, '*') || "unknown"
+  var title = name +" from "+ city+": " + document.getElementById("commentInput").value.replace(/[^\w\s]/gi, '*') || name + ": No Message";
   
   var valid = re.test(email)
 
