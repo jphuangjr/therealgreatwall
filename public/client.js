@@ -127,6 +127,7 @@ $("#brickButton").on('click', function(){
       contentType: "application/json",
       success: function(data){
         renderer()
+        alert("Thank you, " + name +". Your brick was added to the wall.")
       },
       error: function(xhr, status, err){
 
