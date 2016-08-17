@@ -193,6 +193,11 @@ button:active {
   
 }
 
+.centered {
+    margin: 0 auto;
+    display: inline-block;
+}
+
 
 #commentArea {
   width: 200px;
