@@ -36,7 +36,7 @@ app.post("/addBrick", function(req, res) {
         headers: {
           "Content-Type":"application/json"
         },
-        body: JSON.stringify({email: req.body.email, name: req.body.name, message: req.body.message})
+        body: JSON.stringify({name: req.body.name, message: req.body.message})
       }, function(error1, response1, body1){
         res.send(200)
 
