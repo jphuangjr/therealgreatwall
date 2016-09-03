@@ -24,12 +24,12 @@ app.get("/render", function (req, res) {
 });
 
 app.post("/addBrick", function(req, res) {
-  request({
-    url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+req.body.email+'"}&apiKey=' + process.env.API,
-    method: "GET"
-  }, function(error, response, body){
-    var data = JSON.parse(body)
-    if(data.length === 0){
+  //request({
+  //  url: 'https://api.mlab.com/api/1/databases/trump/collections/users?q={"email": "'+req.body.email+'"}&apiKey=' + process.env.API,
+  //  method: "GET"
+  //}, function(error, response, body){
+  //  var data = JSON.parse(body)
+  //  if(data.length === 0){
       request({
         url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + process.env.API,
         method: "POST",
@@ -42,8 +42,8 @@ app.post("/addBrick", function(req, res) {
 
       })
 
-    }
-  })
+    //}
+  //})
 
 });
 
