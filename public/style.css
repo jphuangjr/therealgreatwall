@@ -137,10 +137,26 @@ body {
   background: yellow;
 }
 
+h2 {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#target1 {
+    display: block;
+    margin: 10% auto 0;
+    padding: 100px;
+    border: 1px solid silver;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 5px grey;
+    width: 700px;
+}
+
 #mainText {
   margin: 0 auto;
   margin-top: 6%;
   width: 600px;
+  display: inline-block;
   font: 14px solid black;
   font-family: "Courier New" !important;
   text-align: center;
