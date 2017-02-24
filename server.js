@@ -31,7 +31,7 @@ app.post("/addBrick", function(req, res) {
   //  var data = JSON.parse(body)
   //  if(data.length === 0){
       request({
-        url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + process.env.API,
+        url: "https://api.mlab.com/api/1/databases/trump/collections/users?apiKey=" + process.env.API + "&l=100000",
         method: "POST",
         headers: {
           "Content-Type":"application/json"
